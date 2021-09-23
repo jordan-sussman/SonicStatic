@@ -1,7 +1,6 @@
 import json
 import requests
 
-from refresh import Refresh
 from secrets import spotify_user_id, discover_weekly_id
 from refresh import Refresh
 
