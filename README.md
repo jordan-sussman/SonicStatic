@@ -11,7 +11,7 @@ Built with:
 
 To Run:
 ```
-1. Open *app.py* and run
-2. Open web browser to *localhost:8000*
+1. Open app.py and run
+2. Open web browser to localhost:8000
 ```
 Note: Be sure to fill in all empty values within the *secrets.py* for your Spotify instance before running.
