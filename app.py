@@ -7,7 +7,7 @@ from refresh import Refresh
 from secrets import spotify_user_id, discover_weekly_id
 from refresh import Refresh
 
-# Bring in variables from secrets.py
+# Brings in variables from secrets.py
 class PlaylistSongs:
     def __init__(self):
         self.user_id = spotify_user_id
@@ -16,7 +16,7 @@ class PlaylistSongs:
         self.tracks = ""
         self.new_playlist_id = ""
 
-# Get track metadata from Spotify API
+# Gets track metadata from Spotify API
     def find_songs(self):
         query = "https://api.spotify.com/v1/playlists/{}/tracks".format(
             discover_weekly_id)
@@ -26,20 +26,20 @@ class PlaylistSongs:
         response_json = response.json()
         print(response)
 
-# Loop through all tracks in playlist to grab each track's album artwork URL
+# Loops through all tracks in playlist to grab each track's album artwork URL
         data = response_json
         for x in data['tracks']['items']:
             urls = str(x['track']['album']['images'][0]['url'])
             print(urls)
 
-# Create .html file through Jinja template then append the file for each loop
+# Creates html file through Jinja template then append the file for each loop
             outputfile = 'gallery.html'
             subs = jinja2.Environment( 
                 loader=jinja2.FileSystemLoader('./')      
                 ).get_template('template.html').render(albumartwork=urls)
             with open(outputfile,'a') as f: f.write(subs)
 
-# Refresh Spotify authorization token
+# Refreshes Spotify authorization token
     def call_refresh(self):
         print("Refreshing token")
         refreshCaller = Refresh()
