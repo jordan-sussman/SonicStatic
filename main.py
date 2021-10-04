@@ -36,7 +36,7 @@ class PlaylistSongs:
             outputfile = 'gallery.html'
             subs = jinja2.Environment( 
                 loader=jinja2.FileSystemLoader('./')      
-                ).get_template('template.html').render(mydata=urls)
+                ).get_template('template.html').render(albumartwork=urls)
             with open(outputfile,'a') as f: f.write(subs)
 
 # Refresh Spotify authorization token
