@@ -1,4 +1,14 @@
 ## README
-**Discover Weekly Gallery** showcases all track album artwork from your Spotify Discover Weekly playlist! This is made possible with Python, Spotify's API, and some fun with self refreshing authorization tokens and in-browser viewing. When run, your default browser will appear and take you through every track's album artwork.
+**Discover Weekly Gallery** showcases all of your track album artwork from your Spotify Discover Weekly playlist in one place! This is made possible with Python, Spotify's API, a self refreshing Spotify authorization token, Jinja, and an HTTP server for in-browser viewing.
+
+Built with:
+- Python
+- Spotify API
+- Jinja
+- HTTP server
+
+To Run:
+1. Open *main.py* and run
+2. Open web browser to *localhost:8000*
 
 Note: Be sure to fill in all empty values within the *secrets.py* for your Spotify instance before running.
