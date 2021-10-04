@@ -1,5 +1,5 @@
 ## README
-Ever wonder what all of your weekly Spotify Discover Weekly playlist track artwork looks like together? Wonder no more! **Discover Weekly Gallery** showcases all of your track album artwork from your Spotify Discover Weekly playlist in one place! This is made possible with Python, Spotify's API, a self refreshing Spotify authorization token, Jinja, and an HTTP server for in-browser viewing.
+**Discover Weekly Gallery** showcases all of your track album artwork from your Spotify Discover Weekly playlist in one place! This is made possible with Python, Spotify's API, a self refreshing Spotify authorization token, Jinja, and an HTTP server for in-browser viewing.
 
 Built with:
 ```
