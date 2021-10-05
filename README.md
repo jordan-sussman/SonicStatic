@@ -9,6 +9,7 @@ Built with:
 - Spotify API
 - Jinja
 - HTTP server
+- HTML
 ```
 
 To Run:
