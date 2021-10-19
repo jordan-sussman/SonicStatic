@@ -7,7 +7,7 @@ Built with:
 ```
 - Python
 - Spotify API
-- Jinja
+- Jinja2
 - HTTP server
 - HTML
 ```
